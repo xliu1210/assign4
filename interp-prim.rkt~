@@ -14,14 +14,9 @@
     ['add1          (if (integer? v) (add1 v)  'err)]
     ['sub1          (if (integer? v) (sub1 v)  'err)]
     ['zero?         (if (integer? v) (zero? v) 'err)]
-    ['abs 	    (if (integer? v) (if (positive? v) v (- v)) 'err)]
-    ['- 	    (if (integer? v) (- v) 'err)]
-    ['not 	    (if (boolean? v) (not v) 'err)]
     ;; TODO: abs, -, not
     ['char?         (char? v)]
     ;; TODO: integer? / boolean?
-    ['integer? (integer? v)]
-    ['boolean? (boolean? v)]
     ['char->integer (if (char? v) (char->integer v) 'err)]
     ['integer->char (if (codepoint? v) (integer->char v) 'err)]
     ['eof-object?   (eof-object? v)]

@@ -60,7 +60,7 @@
 	       [(cons (Binding v ex) res) (let ((es (interp-env ex r)))
 	       	      (match es
 		      	     ['err 'err]
-			     [_ (interp-let res e r (ext defined v es) )]))]))
+			     [_ (interp-let bs e r (ext defined v es) )]))]))
 
 (define (interp-let* bs e r)
 	(match bs
